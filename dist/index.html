@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <h2>HangMan Game</h2>
+    <div class="main">
+      <div class="img">
+        <svg height="250" width="200" class="figure-container">
+          <line x1="60" y1="20" x2="140" y2="20" />
+          <line x1="140" y1="20" x2="140" y2="50" />
+          <line x1="60" y1="20" x2="60" y2="230" />
+          <line x1="20" y1="230" x2="100" y2="230" />
+
+          <!-- HEAD  -->
+          <circle cx="140" cy="70" r="20" id="figure-body-1" />
+          <!-- BODY  -->
+          <line x1="140" y1="90" x2="140" y2="150" id="figure-body-2" />
+          <!-- ARMS  -->
+          <line x1="140" y1="120" x2="120" y2="100" id="figure-body-3" />
+          <line x1="140" y1="120" x2="160" y2="100" id="figure-body-4" />
+          <!-- LEGS  -->
+          <line x1="140" y1="150" x2="120" y2="180" id="figure-body-5" />
+          <line x1="140" y1="150" x2="160" y2="180" id="figure-body-6" />
+        </svg>
+      </div>
+      <div class="content">
+        <h3>Guess the Country name:</h3>
+        <div class="fill">
+          <div class="title" id="0"></div>
+          <div class="title" id="1"></div>
+          <div class="title" id="2"></div>
+          <div class="title" id="3"></div>
+          <div class="title" id="4"></div>
+        </div>
+        <div id="choose">
+          <div class="guess">
+            <div id="a" class="keys">a</div>
+            <div id="b" class="keys">b</div>
+            <div id="c" class="keys">c</div>
+            <div id="d" class="keys">d</div>
+            <div id="e" class="keys">e</div>
+            <div id="f" class="keys">f</div>
+            <div id="g" class="keys">g</div>
+            <div id="h" class="keys">h</div>
+            <div id="i" class="keys">i</div>
+            <div id="j" class="keys">j</div>
+            <div id="k" class="keys">k</div>
+            <div id="l" class="keys">l</div>
+            <div id="m" class="keys">m</div>
+            <div id="n" class="keys">n</div>
+            <div id="o" class="keys">o</div>
+            <div id="p" class="keys">p</div>
+            <div id="q" class="keys">q</div>
+            <div id="r" class="keys">r</div>
+            <div id="s" class="keys">s</div>
+            <div id="t" class="keys">t</div>
+            <div id="u" class="keys">u</div>
+            <div id="v" class="keys">v</div>
+            <div id="w" class="keys">w</div>
+            <div id="x" class="keys">x</div>
+            <div id="y" class="keys">y</div>
+            <div id="z" class="keys">z</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="gameOver">
+      <p>You lost the game!</p>
+      <button id="playAgain">Play Again</button>
+    </div>
+
+    <div id="youWin">
+      <p>Hurraahh! You won the game</p>
+      <button id="play">Play Again</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
